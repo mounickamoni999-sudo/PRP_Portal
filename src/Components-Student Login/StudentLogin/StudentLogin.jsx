@@ -1,9 +1,16 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./StudentLogin.css";
 
 function StudentLogin() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const handleBack = () => {
+    navigate("/");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +24,7 @@ function StudentLogin() {
       alert("Invalid Email or Password");
     }
   };
-
+  
   return (
     <div className="StudentLogin-page">
 
@@ -41,9 +48,12 @@ function StudentLogin() {
       {/* Main */}
       <main className="StudentLogin-main">
 
-        <button className="StudentLogin-back-btn">
-          ← Back
-        </button>
+       <button
+  className="StudentLogin-back-btn"
+  onClick={handleBack}
+>
+  ← Back
+</button>
         
 
         <div className="StudentLogin-wrapper">
