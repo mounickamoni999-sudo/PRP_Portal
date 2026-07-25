@@ -1,0 +1,125 @@
+.adminStatCardsContainer{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    padding:25px;
+
+}
+
+.adminStatCard{
+
+    width: 250px;
+
+    height: 130px;
+
+    background:white;
+
+    border:1px solid #ececec;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.04);
+
+}
+
+.adminStatCardTop{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.adminStatCard h5{
+
+    margin:0;
+
+    font-size:13px;
+
+    color:#666;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+.adminStatCard h2{
+
+    margin-top:12px;
+
+    margin-bottom:0;
+
+    font-size:40px;
+
+    color:#1b1b1b;
+
+}
+
+.adminStatCardIcon{
+
+    width:36px;
+
+    height:36px;
+
+}
+
+.adminStatGreenText{
+
+    color:#16a34a;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+}
+
+.adminStatPurpleText{
+
+    color:#8b5cf6;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+}
+
+.adminStatOrangeText{
+
+    color:#d97706;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+}
+
+.adminStatGrayText{
+
+    color:#666;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+}
+
+.adminStatTitle{
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#5A5A5A;
+}
+
+.adminStatSubText{
+    font-size:15px;
+    font-weight:500;
+}

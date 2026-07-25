@@ -1,0 +1,37 @@
+.placementChartContainer {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.placementChartBars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 280px;
+  margin-top: 20px;
+}
+
+.placementChartBarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.placementChartBarBackground {
+  width: 24px;
+  height: 220px;
+  background: #eee;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.placementChartBarFill {
+  width: 100%;
+  background: linear-gradient(#bf79ff,#7f2cff);
+  border-radius: 20px;
+}

@@ -10,6 +10,8 @@ import CallToAction from "./Components-Landing Page/CallToAction/CallToAction";
 import Footer from "./Components-Landing Page/Footer/Footer";
 
 import StudentLogin from "./Components-Student Login/StudentLogin/StudentLogin";
+import DashboardCards from "./Components-Dashboard/DashboardCards";
+import AdminDashboard from "./Components-Admin-Dashboard/AdminDashboard";
 
 function LandingPage() {
   return (
@@ -29,8 +31,14 @@ function LandingPage() {
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
+      {/* Temporary Home Page */}
+      <Route path="/" element={<AdminDashboard />} />
+
+      {/* Other Routes */}
+      <Route path="/landing" element={<LandingPage />} />
       <Route path="/login" element={<StudentLogin />} />
+      <Route path="/dashboard" element={<DashboardCards />} />
+      <Route path="/admin-dashboard" element={<AdminDashboard />} />
     </Routes>
   );
 }
