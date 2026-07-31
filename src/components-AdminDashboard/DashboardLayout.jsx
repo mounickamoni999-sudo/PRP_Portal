@@ -1,3 +1,4 @@
+import React from "react";
 import "./DashboardLayout.css";
 
 import AdminSidebar from "./AdminSidebar";
@@ -7,35 +8,32 @@ import PlacementChart from "./PlacementChart";
 import AdminActivityLog from "./AdminActivityLog";
 import AdminUserTable from "./AdminUserTable";
 
-function DashboardLayout() {
+const DashboardLayout = () => {
   return (
-    <div className="adminDashboardContainer">
+    <div className="dashboardContainer">
 
       <AdminSidebar />
 
-      <div className="adminDashboardRight">
+      <div className="dashboardRight">
 
-        <div className="adminDashboardHeaderSection">
-          <AdminHeader />
-        </div>
+        <AdminHeader />
 
-        <div className="adminDashboardCardsSection">
-          <AdminStatCards />
-        </div>
+        <AdminStatCards />
 
-        <div className="adminDashboardMiddle">
+        <div className="dashboardMiddle">
+
           <PlacementChart />
+
           <AdminActivityLog />
+
         </div>
 
-        <div className="adminDashboardBottom">
-          <AdminUserTable />
-        </div>
+        <AdminUserTable />
 
       </div>
 
     </div>
   );
-}
+};
 
 export default DashboardLayout;

@@ -1,46 +1,23 @@
+import React from "react";
 import "./AdminUserTable.css";
 
-import sarahImage from "../assets/admin dashboard/sarah k.jenkins.png";
-import davidImage from "../assets/admin dashboard/david lee.png";
-
-function AdminUserTable() {
-
-  const users = [
-    {
-      id: 1,
-      image: sarahImage,
-      name: "Sarah K. Jenkins",
-      role: "RECRUITER",
-      ACTIVITY: Published "Senior AI Architech" role,
-      TIMESTAMP: "2 mins ago",
-      ACTIONS: 
-    },
-
-    {
-      id: 2,
-      image: davidImage,
-      name: "David Lee",
-      role: "CANDIDATE",
-      ACTIVITY: "Submitted portfolio via AI matching",
-      TIMESTAMP: "1 hour ago",
-      ACTIONS: "",
-    },
-
-  ];
-
+const AdminUserTable = () => {
   return (
+    <div className="adminUserTableContainer">
 
-    <section className="userTableCard">
+      <div className="adminUserTableHeader">
 
-      <div className="userTableHeader">
+        <h2 className="adminUserTableTitle">
+          User Management
+        </h2>
 
-        <h2>Recent Users</h2>
-
-        <button>View All</button>
+        {/* <button className="adminUserTableViewButton">
+          View All
+        </button> */}
 
       </div>
 
-      <table>
+      <table className="adminUserTable">
 
         <thead>
 
@@ -62,48 +39,52 @@ function AdminUserTable() {
 
         <tbody>
 
-          {users.map((USER) => (
+          <tr>
 
-            <tr key={user.id}>
+            <td>Sarah Johnson</td>
 
-              <td>
+            <td>Student</td>
 
-                <div className="userInfo">
+            <td>Account Verified</td>
 
-                  <img src={user.image} alt={user.name} />
+            <td>2 Hours Ago</td>
 
-                  <span>{user.name}</span>
+            <td>
 
-                </div>
+              <button className="adminUserTableActionButton">
+                View
+              </button>
 
-              </td>
+            </td>
 
-              <td>{user.ROLE}</td>
+          </tr>
 
-              <td>{user.ACTIVITY}</td>
+          <tr>
 
-              <td>
+            <td>David Miller</td>
 
-                <span className={`status ${user.status.toLowerCase()}`}>
-                  {user.TIMESTAMP}
-                </span>
+            <td>Recruiter</td>
 
-              </td>
+            <td>Company Approved</td>
 
-              <td>{user.ACTIONS}</td>
+            <td>4 Hours Ago</td>
 
-            </tr>
+            <td>
 
-          ))}
+              <button className="adminUserTableActionButton">
+                View
+              </button>
+
+            </td>
+
+          </tr>
 
         </tbody>
 
       </table>
 
-    </section>
-
+    </div>
   );
-
-}
+};
 
 export default AdminUserTable;

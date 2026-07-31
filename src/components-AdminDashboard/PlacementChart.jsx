@@ -1,53 +1,36 @@
+import React from "react";
 import "./PlacementChart.css";
 
-function PlacementChart() {
+const PlacementChart = () => {
 
   const chartData = [
-    { month: "Jan", height: 220 },
-    { month: "Feb", height: 300 },
-    { month: "Mar", height: 250 },
-    { month: "Apr", height: 390 },
-    { month: "May", height: 340 },
-    { month: "Jun", height: 440, active: true },
+    { month: "Jan", height: 90 },
+    { month: "Feb", height: 130 },
+    { month: "Mar", height: 110 },
+    { month: "Apr", height: 170 },
+    { month: "May", height: 145 },
+    { month: "Jun", height: 210, active: true },
   ];
 
   return (
-
     <div className="placementChartContainer">
 
       <div className="placementChartHeader">
 
         <div>
-
-          <h2 className="placementChartTitle">
-            Placement Performance
-          </h2>
-
-          <p className="placementChartSubtitle">
-            Monthly placement success trends
-          </p>
-
-        </div>
-
-        <div className="placementChartLegend">
-
-          <span className="placementChartLegendDot"></span>
-
-          <span className="placementChartLegendText">
-            Placements
-          </span>
-
+          <h2>Placement Performance</h2>
+          <p>Monthly placement success trend</p>
         </div>
 
       </div>
 
-      <div className="placementChartGraph">
 
-        {chartData.map((item) => (
+      <div className="placementChartBars">
 
-          <div
-            key={item.month}
-            className="placementChartColumn"
+        {chartData.map((item, index) => (
+          <div 
+            className="placementChartBarWrapper" 
+            key={index}
           >
 
             <div
@@ -56,24 +39,20 @@ function PlacementChart() {
                   ? "placementChartBar placementChartBarActive"
                   : "placementChartBar"
               }
-              style={{
-                height: `${item.height / 2}px`,
-              }}
-            ></div>
+              style={{ height: `${item.height}px` }}
+            >
+            </div>
 
-            <span className="placementChartMonth">
-              {item.month}
-            </span>
+            <span>{item.month}</span>
 
           </div>
-
         ))}
 
       </div>
 
-    </div>
 
+    </div>
   );
-}
+};
 
 export default PlacementChart;

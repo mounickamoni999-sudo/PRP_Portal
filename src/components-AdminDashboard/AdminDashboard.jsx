@@ -1,7 +1,8 @@
+import React from "react";
 import DashboardLayout from "./DashboardLayout";
 
-function AdminDashboard() {
+const AdminDashboard = () => {
   return <DashboardLayout />;
-}
+};
 
 export default AdminDashboard;

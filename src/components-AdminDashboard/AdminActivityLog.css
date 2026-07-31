@@ -1,109 +1,134 @@
-.activityCard{
+.adminActivityContainer{
 
-background:#fff;
+    width:100%;
+    height:100%;
 
-border-radius:22px;
+    background:#FFFFFF;
 
-padding:28px;
+    border-radius:22px;
 
-box-shadow:0 12px 30px rgba(0,0,0,.05);
+    padding:24px;
 
-height:100%;
+    box-shadow:0px 4px 18px rgba(0,0,0,.05);
 
-}
+    display:flex;
 
-.activityHeader{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-margin-bottom:28px;
+    flex-direction:column;
 
 }
 
-.activityHeader h2{
+.adminActivityTitle{
 
-font-size:24px;
+    font-family:Inter,sans-serif;
 
-font-weight:700;
+    font-size:20px;
 
-margin:0;
+    font-weight:700;
 
-color:#202124;
+    color:#16233B;
 
-}
-
-.activityHeader span{
-
-font-size:15px;
-
-font-weight:600;
-
-color:#7A1FF5;
-
-cursor:pointer;
+    margin-bottom:22px;
 
 }
 
-.activityList{
+.adminActivityList{
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:22px;
+    gap:20px;
 
-}
-
-.activityItem{
-
-display:flex;
-
-align-items:center;
-
-gap:18px;
+    flex:1;
 
 }
 
-.activityItem img{
+.adminActivityItem{
 
-width:48px;
+    display:flex;
 
-height:48px;
+    align-items:center;
 
-object-fit:contain;
-
-}
-
-.activityText{
-
-display:flex;
-
-flex-direction:column;
+    gap:16px;
 
 }
 
-.activityText h4{
+.adminActivityIconCircle{
 
-margin:0;
+    width:42px;
 
-font-size:16px;
+    height:42px;
 
-font-weight:600;
+    min-width:42px;
 
-color:#232323;
+    min-height:42px;
+
+    border-radius:50%;
+
+    background:#F3E8FF;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:0px 4px 12px rgba(124,58,237,.18);
 
 }
 
-.activityText p{
+.adminActivityIcon{
 
-margin-top:6px;
+    width:18px;
 
-font-size:14px;
+    height:18px;
 
-color:#8C95A1;
+    object-fit:contain;
+
+}
+
+.adminActivityText{
+
+    font-family:Inter,sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:#202020;
+
+    line-height:1.3;
+
+}
+
+.adminActivityHistoryButton{
+
+    margin-top:24px;
+
+    background:none;
+
+    border:none;
+
+    font-family:Inter,sans-serif;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#7C3AED;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    padding:0;
+
+    transition:.25s;
+
+}
+
+.adminActivityHistoryButton:hover{
+
+    color:#5B21B6;
 
 }

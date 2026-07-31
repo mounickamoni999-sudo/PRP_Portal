@@ -1,3 +1,4 @@
+import React from "react";
 import "./AdminStatCards.css";
 
 import totalPlacements from "../assets/admin dashboard/total placements.png";
@@ -5,7 +6,7 @@ import activeStudents from "../assets/admin dashboard/active students.png";
 import verifiedRecruiters from "../assets/admin dashboard/verified recruiters.png";
 import partnerCompanies from "../assets/admin dashboard/partner companies.png";
 
-function AdminStatCards() {
+const AdminStatCards = () => {
   return (
     <div className="adminStatCardsContainer">
 
@@ -14,6 +15,7 @@ function AdminStatCards() {
         <div className="adminStatCardTop">
 
           <div>
+
             <p className="adminStatCardTitle">
               TOTAL PLACEMENTS
             </p>
@@ -21,11 +23,12 @@ function AdminStatCards() {
             <h2 className="adminStatCardNumber">
               4,120
             </h2>
+
           </div>
 
           <img
             src={totalPlacements}
-            alt=""
+            alt="Total Placements"
             className="adminStatCardIcon"
           />
 
@@ -42,6 +45,7 @@ function AdminStatCards() {
         <div className="adminStatCardTop">
 
           <div>
+
             <p className="adminStatCardTitle">
               ACTIVE STUDENTS
             </p>
@@ -49,11 +53,12 @@ function AdminStatCards() {
             <h2 className="adminStatCardNumber">
               12,482
             </h2>
+
           </div>
 
           <img
             src={activeStudents}
-            alt=""
+            alt="Active Students"
             className="adminStatCardIcon"
           />
 
@@ -70,6 +75,7 @@ function AdminStatCards() {
         <div className="adminStatCardTop">
 
           <div>
+
             <p className="adminStatCardTitle">
               VERIFIED RECRUITERS
             </p>
@@ -77,11 +83,12 @@ function AdminStatCards() {
             <h2 className="adminStatCardNumber">
               3,142
             </h2>
+
           </div>
 
           <img
             src={verifiedRecruiters}
-            alt=""
+            alt="Verified Recruiters"
             className="adminStatCardIcon"
           />
 
@@ -98,6 +105,7 @@ function AdminStatCards() {
         <div className="adminStatCardTop">
 
           <div>
+
             <p className="adminStatCardTitle">
               PARTNER COMPANIES
             </p>
@@ -105,11 +113,12 @@ function AdminStatCards() {
             <h2 className="adminStatCardNumber">
               312
             </h2>
+
           </div>
 
           <img
             src={partnerCompanies}
-            alt=""
+            alt="Partner Companies"
             className="adminStatCardIcon"
           />
 
@@ -123,6 +132,6 @@ function AdminStatCards() {
 
     </div>
   );
-}
+};
 
 export default AdminStatCards;
