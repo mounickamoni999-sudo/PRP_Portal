@@ -1,7 +1,0 @@
-.adminDashboardContainer {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  background: #f5f6fa;
-  overflow-x: hidden;
-}
