@@ -39,8 +39,8 @@ import davidUser from "../assets/admin dashboard/david lee.png";
 
 
 // Table Icons
-import userManagement from "../assets/admin dashboard/user management.png";
-import analytics from "../assets/admin dashboard/analytics.png";
+import filterIcon from "../assets/admin dashboard/filter.png";
+import sortIcon from "../assets/admin dashboard/sort.png";
 import platformSettings from "../assets/admin dashboard/platform settings.png";
 
 
@@ -236,21 +236,19 @@ placeholder="Search resources, users, or logs..."
 <img 
 src={notifications}
 alt="notifications"
-className="AdminDashboardHeaderIcon AdminDashboardNotificationIcon"
+
 />
 
 
 <img 
 src={support}
 alt="support"
-className="AdminDashboardHeaderIcon"
 />
 
 
 <img 
 src={settings}
 alt="settings"
-className="AdminDashboardHeaderIcon"
 />
 
 
@@ -547,32 +545,24 @@ User Management & Recent Activity
 
 <div className="AdminDashboardTableActions">
 
+  <span className="AdminDashboardActionButton">
+    <img
+      src={filterIcon}
+      alt="filter"
+    className="AdminDashboardActionImage"
 
-<span>
+    />
+    Filter
+  </span>
 
-<img 
-src={userManagement}
-alt="filter"
-/>
-
-Filter
-
-</span>
-
-
-
-<span>
-
-<img 
-src={analytics}
-alt="sort"
-/>
-
-Sort
-
-</span>
-
-
+  <span className="AdminDashboardActionButton">
+    <img
+      src={sortIcon}
+      alt="sort"
+      className="AdminDashboardActionImage"
+    />
+    Sort
+  </span>
 
 </div>
 
