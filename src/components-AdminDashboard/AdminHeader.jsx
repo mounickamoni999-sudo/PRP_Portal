@@ -3,7 +3,7 @@ import "./AdminHeader.css";
 import notificationIcon from "../assets/admin dashboard/notifications.png";
 import supportIcon from "../assets/admin dashboard/support.png";
 import settingsIcon from "../assets/admin dashboard/settings.png";
-import adminUserImage from "../assets/admin dashboard/admin user pic.png";
+import adminUser from "../assets/admin dashboard/admin user pic.png";
 
 function AdminHeader() {
   return (
@@ -24,7 +24,7 @@ function AdminHeader() {
         <button className="adminHeaderIconButton">
           <img
             src={notificationIcon}
-            alt="notification"
+            alt="Notification"
             className="adminHeaderIconImage"
           />
         </button>
@@ -32,7 +32,7 @@ function AdminHeader() {
         <button className="adminHeaderIconButton">
           <img
             src={supportIcon}
-            alt="support"
+            alt="Support"
             className="adminHeaderIconImage"
           />
         </button>
@@ -40,7 +40,7 @@ function AdminHeader() {
         <button className="adminHeaderIconButton">
           <img
             src={settingsIcon}
-            alt="settings"
+            alt="Settings"
             className="adminHeaderIconImage"
           />
         </button>
@@ -49,17 +49,14 @@ function AdminHeader() {
 
         <div className="adminHeaderProfile">
 
-          <div className="adminHeaderProfileText">
-
+          <div className="adminHeaderProfileContent">
             <h4>Admin User</h4>
-
             <p>SUPER ADMIN</p>
-
           </div>
 
           <img
-            src={adminUserImage}
-            alt="admin"
+            src={adminUser}
+            alt="Admin"
             className="adminHeaderProfileImage"
           />
 
