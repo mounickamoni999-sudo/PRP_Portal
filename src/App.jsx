@@ -1,7 +1,12 @@
-import AdminDashboard from "./Components-AdminDashboard/AdminDashboard";
+import AdminDashboard from "./Components-AdminDasboard/AdminDasboard";
+
 
 function App() {
-  return <AdminDashboard />;
+
+  return (
+    <AdminDashboard />
+  );
+
 }
 
 export default App;

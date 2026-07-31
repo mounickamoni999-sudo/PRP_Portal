@@ -1,0 +1,676 @@
+.AdminDashboardPage {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.AdminDashboardContainer {
+  flex: 1;
+  padding:0;
+  background: #f6f8fc;
+  height: 100vh;
+  overflow-y: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.AdminDashboardContainer * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header */
+
+.AdminDashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+
+.AdminDashboardSearch {
+  width: 330px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 0 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+.AdminDashboardSearch input {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+
+.AdminDashboardSearchIcon {
+  width:18px;
+  height:18px;
+  object-fit:contain;
+  flex-shrink:0;
+}
+
+.AdminDashboardHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+
+.AdminDashboardHeaderRight > img {
+  width: 22px;
+  height: 22px;
+}
+
+
+
+.AdminDashboardProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.AdminDashboardProfile img {
+
+ width:45px;
+
+ height:45px;
+
+ border-radius:50%;
+
+ object-fit:cover;
+
+}
+
+
+
+.AdminDashboardProfile h4 {
+
+ font-size:15px;
+
+}
+
+
+
+.AdminDashboardProfile span {
+
+ font-size:12px;
+
+ color:#777;
+
+}
+
+
+
+/* Cards */
+
+
+.AdminDashboardCards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+
+.AdminDashboardCard {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #ececec;
+  height: 145px;
+}
+
+
+.AdminDashboardCardHeader {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 20px;
+}
+
+
+.AdminDashboardCardHeader h5 {
+  font-size:13px;
+  color:#666;
+  font-weight:600;
+  flex: 1;
+}
+
+
+
+
+.AdminDashboardCardHeader img {
+
+   width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+
+.AdminDashboardCard h2 {
+
+  font-size:32px;
+  margin:15px 0 8px;
+
+}
+
+.AdminDashboardCard p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+.AdminDashboardCard p img {
+
+ width:15px;
+
+ height:15px;
+
+ object-fit: contain;
+
+}
+
+
+
+
+/* Middle Section */
+
+
+.AdminDashboardMiddle {
+
+ display:grid;
+
+ grid-template-columns:2fr 1fr;
+
+ gap:12px;
+
+ margin-bottom:10px;
+
+}
+
+
+
+.AdminDashboardChart {
+
+ background:#ffffff;
+
+ border-radius:15px;
+
+ padding:15px;
+
+ border:1px solid #ececec;
+
+}
+
+
+
+.AdminDashboardChartHeader {
+
+ display:flex;
+
+ justify-content:space-between;
+
+ margin-bottom:35px;
+
+}
+
+
+
+.AdminDashboardChartHeader h2 {
+
+ margin-bottom:5px;
+
+}
+
+
+
+.AdminDashboardChartHeader span {
+
+ color:#777;
+
+ font-size:14px;
+
+}
+
+
+
+.AdminDashboardLegend {
+
+ display:flex;
+
+ align-items:center;
+
+ gap:8px;
+
+ color:#7d53d5;
+
+ font-weight:600;
+
+}
+
+
+
+.AdminDashboardLegend span {
+
+ width:9px;
+
+ height:9px;
+
+ background:#7d53d5;
+
+ border-radius:50%;
+
+}
+
+
+
+
+/* Bars */
+
+
+.AdminDashboardBars {
+  height:220px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  padding:0 80px;
+}
+
+
+
+.AdminDashboardBarBox {
+  width:50px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+
+.AdminDashboardBar {
+  width:50px;
+  background:#e5d9ff;
+  border-radius:8px 8px 0 0;
+}
+
+
+
+.AdminDashboardActiveBar {
+
+ background:#7d53d5;
+
+}
+
+
+
+.AdminDashboardBarBox span {
+
+ margin-top:10px;
+
+ color:#555;
+
+}
+
+
+
+
+
+/* Activity */
+
+
+.AdminDashboardActivity {
+
+ background:#ffffff;
+
+ border-radius:15px;
+
+ padding:20px;
+
+ border:1px solid #ececec;
+
+}
+
+
+
+.AdminDashboardActivity h2 {
+
+ margin-bottom:20px;
+
+}
+
+
+
+.AdminDashboardActivityItem {
+
+ display:flex;
+
+ align-items:center;
+
+ gap:8px;
+
+ margin-bottom:10px;
+
+}
+
+
+
+.AdminDashboardActivityImage {
+
+ width:32px;
+
+ height:32px;
+
+ object-fit: contain;
+
+ border-radius:10%%;
+
+}
+
+
+
+.AdminDashboardActivityItem h4 {
+
+ font-size:15px;
+
+ margin-bottom:5px;
+
+}
+
+
+
+.AdminDashboardActivityItem p {
+
+ color:#777;
+
+ font-size:13px;
+
+}
+
+
+
+.AdminDashboardActivity a {
+
+ display:block;
+
+ text-align:center;
+
+ margin-top:20px;
+
+ color:#7d53d5;
+
+ text-decoration:none;
+
+}
+
+
+
+
+
+/* Table */
+
+
+.AdminDashboardTable {
+
+ background:#ffffff;
+
+ border-radius:15px;
+
+ border:1px solid #ececec;
+
+ overflow:hidden;
+
+}
+
+
+
+.AdminDashboardTableHeader {
+
+ padding: 12px 20px;
+
+ display:flex;
+
+ justify-content:space-between;
+
+ align-items:center;
+
+}
+
+
+
+.AdminDashboardTableActions {
+
+ display:flex;
+
+ gap:20px;
+
+}
+
+
+
+.AdminDashboardTableActions span {
+
+ display:flex;
+
+ align-items:center;
+
+ gap:6px;
+
+}
+
+
+
+.AdminDashboardTableActions img {
+
+ width:20px;
+
+ height:20px;
+
+}
+
+
+
+table {
+
+ width:100%;
+
+ border-collapse:collapse;
+
+}
+
+
+
+thead {
+
+ background:#eef7fc;
+
+}
+
+
+
+th,td {
+
+ padding:10px 15px;
+
+ text-align:left;
+
+}
+
+
+
+tbody tr {
+
+ border-top:1px solid #ececec;
+
+}
+
+
+
+
+.AdminDashboardUser {
+
+ display:flex;
+
+ align-items:center;
+
+ gap:12px;
+
+}
+
+
+
+.AdminDashboardUser img {
+
+ width:42px;
+
+ height:42px;
+
+ border-radius:50%;
+
+ object-fit:cover;
+
+}
+
+
+
+.AdminDashboardUser h4 {
+
+ margin-bottom:5px;
+
+}
+
+
+
+.AdminDashboardUser span {
+
+ font-size:12px;
+
+ color:#777;
+
+}
+
+
+
+.AdminDashboardRole {
+
+ background:#eef1f5;
+
+ padding:6px 12px;
+
+ border-radius:5px;
+
+ font-size:12px;
+
+ font-weight:600;
+
+}
+
+
+
+.AdminDashboardActionIcon {
+
+ width:6px;
+
+ height:22px;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:1100px){
+
+.AdminDashboardCards{
+
+ grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.AdminDashboardMiddle{
+
+ grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.AdminDashboardHeader{
+
+ flex-direction:column;
+
+ gap:20px;
+
+}
+
+
+.AdminDashboardSearch{
+
+ width:100%;
+
+}
+
+
+.AdminDashboardCards{
+
+ grid-template-columns:1fr;
+
+}
+
+
+table{
+
+ display:block;
+
+ overflow-x:auto;
+
+}
+
+
+}
+
+.AdminDashboardThreeDots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  width: 20px;
+}
+
+
+.AdminDashboardThreeDots span {
+  width: 4px;
+  height: 4px;
+  background: #555;
+  border-radius: 50%;
+}

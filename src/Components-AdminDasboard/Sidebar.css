@@ -1,0 +1,119 @@
+.Sidebar-container {
+
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+
+  flex-shrink: 0;
+
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #e7c4f2,
+    #b05acb
+  );
+
+  border-radius: 0 30px 30px 0;
+
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+
+  overflow-y: auto;
+
+}
+
+
+/* Top spacing */
+
+.Sidebar-top {
+
+  height:45px;
+  background:#ffffff;
+
+}
+
+
+
+/* Menu */
+
+.Sidebar-menu {
+
+  margin-top:20px;
+
+}
+
+
+
+.Sidebar-menuItem {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+
+  padding:18px 30px;
+
+  margin:8px 15px;
+
+  cursor:pointer;
+
+  color:#222;
+
+  font-size:15px;
+
+  font-weight:500;
+
+  border-radius:12px;
+
+  transition:0.3s;
+
+}
+
+
+
+.Sidebar-menuItem:hover {
+
+  background:rgba(255,255,255,0.45);
+
+}
+
+
+
+/* Icons */
+
+.Sidebar-icon {
+
+  width:22px;
+
+  height:22px;
+
+  object-fit:contain;
+
+}
+
+
+
+/* Active menu */
+
+.Sidebar-menuItemActive {
+
+  background:#6f0ea8;
+
+  color:#ffffff;
+
+  font-weight:600;
+
+  box-shadow:0 5px 12px rgba(111,14,168,0.25);
+
+}
+
+
+
+.Sidebar-menuItemActive .Sidebar-icon {
+
+  filter:none
+  brightness(0)
+  saturate(100%)
+  invert(100%);
+
+}
